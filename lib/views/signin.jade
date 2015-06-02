@@ -1,0 +1,20 @@
+html
+  head
+    title EComm - Création d'un compte
+    link(rel='stylesheet', href='vendors/bootstrap/dist/css/bootstrap.css')
+    link(rel='stylesheet', href='vendors/admin-lte/dist/css/AdminLTE.css')
+  body.login-page
+    .login-box
+      .login-logo
+        a(href='/') <b>E</b>Comm
+      .login-box-body
+        p.login-box-msg Créer un nouveau compte
+        form(action='signin', method='post')
+          .form-group.has-feedback
+            input.form-control(placeholder='Nom utilisateur', type='text', name='username', autofocus)
+            span.glyphicon.glyphicon-envelope.form-control-feedback
+          .form-group.has-feedback
+            input.form-control(placeholder='Mot de passe', name='password', type='password')
+            span.glyphicon.glyphicon-lock.form-control-feedback
+          button.btn.btn-primary.btn-block.btn-flat(type='submit') Créer un compte
+        a.text-center(href='login') Se connecter
