@@ -3,7 +3,7 @@ var wiredep = require('wiredep').stream;
 var inject = require('gulp-inject');
 
 gulp.task('socket.io', function() {
-  return gulp.src('./node_modules/socket.io-client/socket.io.js')
+  return gulp.src('./node_modules/socket.io-client/dist/socket.io.js')
     .pipe(gulp.dest('./public/vendors'));
 });
 
